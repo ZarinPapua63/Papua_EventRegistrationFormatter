@@ -1,0 +1,29 @@
+# Version 3 - Added date formatting
+
+from datetime import datetime
+
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+section = input("Enter your section: ")
+event_name = input("Enter the event name: ")
+event_year = int(input("Enter the event year: "))
+event_month = int(input("Enter the event month (1-12): "))
+event_day = int(input("Enter the event day: "))
+
+full_name = first_name.strip().title() + " " + last_name.strip().title()
+section_clean = section.strip().upper()
+event_clean = event_name.strip().title()
+
+event_date = datetime(event_year, event_month, event_day)
+readable_date = event_date.strftime("%B %d, %Y")
+
+print("\nStudent Event Registration Summary")
+print("Name:", full_name)
+print("Name Code:", full_name.upper())
+print("Section:", section_clean)
+print("Event:", event_clean)
+print("Event Date:", readable_date)
+print("Language Used: Python")
+print("String Feature Used: strip(), title(), upper()")
+print("Date/Time Feature Used: datetime")
+print("Registration record created successfully.")

@@ -1,0 +1,23 @@
+# Version 1 - Basic input and output
+
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+section = input("Enter your section: ")
+event_name = input("Enter the event name: ")
+event_year = input("Enter the event year: ")
+event_month = input("Enter the event month: ")
+event_day = input("Enter the event day: ")
+
+full_name = first_name + " " + last_name
+event_date = event_month + " " + event_day + ", " + event_year
+
+print("\nStudent Event Registration Summary")
+print("Name:", full_name)
+print("Name Code:", full_name)
+print("Section:", section)
+print("Event:", event_name)
+print("Event Date:", event_date)
+print("Language Used: Python")
+print("String Feature Used: None (basic input and output)")
+print("Date/Time Feature Used: None (basic input and output)")
+print("Registration record created successfully.")

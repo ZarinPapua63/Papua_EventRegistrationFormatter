@@ -1,0 +1,26 @@
+
+# Version 2 - Added string formatting
+
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
+section = input("Enter your section: ")
+event_name = input("Enter the event name: ")
+event_year = input("Enter the event year: ")
+event_month = input("Enter the event month: ")
+event_day = input("Enter the event day: ")
+
+full_name = first_name.strip().title() + " " + last_name.strip().title()
+section_clean = section.strip().upper()
+event_clean = event_name.strip().title()
+event_date = event_month + " " + event_day + ", " + event_year
+
+print("\nStudent Event Registration Summary")
+print("Name:", full_name)
+print("Name Code:", full_name.upper())
+print("Section:", section_clean)
+print("Event:", event_clean)
+print("Event Date:", event_date)
+print("Language Used: Python")
+print("String Feature Used: strip(), title(), upper()")
+print("Date/Time Feature Used: Not added yet")
+print("Registration record created successfully.")
